@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$dark-grey: #333;
+$light-grey: #999;
+$mid-grey: #555;
+
+body {
+  background-color: $dark-grey;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+
+    .card {
+      padding: 1rem;
+      border: 2px solid $light-grey;
+      border-radius: 5px;
+      width: 100%;
+      margin: 2px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.5);
+
+      &:hover {
+        background-color: $mid-grey;
+      }
+    }
+  }
+}
